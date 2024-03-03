@@ -20,11 +20,11 @@ fn main() {
 
 fn sum<T>(list: &List<T>) -> T
 where
-    T: Add<Output = T> + Default + Copy, // Add trait with associated type Output
+    T: Add<Output = T> + Default + Copy,
 {
     fn sum_rec<T>(x: &List<T>, sum: T) -> T
     where
-        T: Add<Output = T> + Default + Copy, // Add trait with associated type Output
+        T: Add<Output = T> + Default + Copy,
     {
         match x {
             Cons(val, node) => sum_rec(node, sum + *val),
@@ -32,5 +32,5 @@ where
         }
     }
 
-    sum_rec(list, T::default()) // Specify the type of the initial sum value as i32
+    sum_rec(list, T::default())
 }

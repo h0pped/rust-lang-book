@@ -1,9 +1,15 @@
-workspace = { members = ["my-crate"] }
 [package]
-name = "minigrep-cli"
+name = "my-crate"
 version = "0.1.0"
 edition = "2021"
+authors = ['awri.l']
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+
+[profile.dev]
+opt-level = 1
+
+[profile.release]
+opt-level = 3

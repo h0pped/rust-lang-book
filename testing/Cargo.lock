@@ -3,9 +3,9 @@
 version = 3
 
 [[package]]
-name = "minigrep-cli"
+name = "adder"
 version = "0.1.0"
 
 [[package]]
-name = "my-crate"
+name = "testing"
 version = "0.1.0"

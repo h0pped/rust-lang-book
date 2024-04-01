@@ -1,6 +1,6 @@
-workspace = { members = ["my-crate"] }
+workspace = { members = ["adder"] }
 [package]
-name = "minigrep-cli"
+name = "testing"
 version = "0.1.0"
 edition = "2021"
 
